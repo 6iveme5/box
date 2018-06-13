@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#background{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /*background: #8c1ed3;*/
+    margin: 0;
+    top: 100px;
+    left: 300px;
+    transform-style: preserve-3d;
+    /*transition: all 1s;*/
+    perspective: 1000px;
+    /*perspective-origin: 100% 0;*/
+
+}
+
+#background:hover .demo{
+
+}
+/*.inner{*/
+    /*background-color: #d3c172;*/
+
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*transition: 1s;*/
+    /*float: left;*/
+
+/*}*/
+
+/*.demo{*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*position: relative;*/
+    /*!*background-color: #ff8391;*!*/
+    /*transition: transform 5s ;*/
+    /*!*transform-style: preserve-3d;*!*/
+    /*margin: 150px;*/
+/*}*/
+
+
+
+.inner:nth-child(1){
+    margin: 150px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+    background-color: #ffc158;
+
+}
+
+.inner:nth-child(2){
+    margin: 150px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+    background-color: #ff8391;
+
+}
+.inner:nth-child(1):hover{
+    transform: translateY(-50px) rotateX(90deg);
+}
+.inner:nth-child(2):hover{
+    transform: translateY(50px) rotateX(90deg);
+}
